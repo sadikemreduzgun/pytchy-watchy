@@ -179,13 +179,15 @@ def send_message():
     try:
         from client import s
     except:
-        print("baban")
+        print("Couldn't get socket! ")
 
     from client import username
     from client import send
     from client import s
-    send(s, username, message)
-
+    try:
+        send(s, username, message)
+    except:
+        messaging_area.insert(END, "Couldn't connect! There is a problem with invite key! ")
     try:
         for pos in messaging_area.curselection():
             print(pos)

@@ -68,6 +68,18 @@ def change_connection_key(config: ConfigParser, role: str):
         "friends": friends,
         "role": role
     }
+    with open('user_info.ini', 'w') as f:
+        config.write(f)
+        f.close()
+
+
+# return connection key
+def get_conn_key():
+    config = ConfigParser()
+    config.read("user_info.ini")
+    user = config["USER"]
+    key = user["role"]
+    return key
 
 
 # upcoming after regulating friend part
@@ -131,6 +143,7 @@ def change_port():
         f.close()
 
 
-# create_network_settings()
-# create_user_config()
+#create_network_settings()
+#create_user_settings()
 # get_uname()
+print(get_conn_key())

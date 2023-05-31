@@ -9,3 +9,8 @@ you need to have an ngrok account to start to project. to get an accoung,
 add your authtoken to your config ngrok.yml file.
 
 project can be started using python main.py
+
+'''pip
+python3 main.py
+python3.exe ./main.py
+'''

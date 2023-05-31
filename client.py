@@ -30,9 +30,13 @@ def decrypt_invite(invite:str):
     return host_name_n_port[0], host_name_n_port[1]
 
 
-inside = file.read()
-file.close()
-print(inside)
+try:
+    inside = get_conn_key()
+except:
+    inside = file.read()
+    file.close()
+    print(inside)
+
 # if host get itself's host and port created by ngrok
 if inside == "host":
     host, port = decrypt_invite(return_invite_key())
@@ -49,11 +53,14 @@ else: # get the invite
 # create socket object
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # start streaming
-s.connect((host, int(port)))
+try:
+    s.connect((host, int(port)))
+except:
+    print("There is a problem with invitation key! ")
 
 
 # get data from server and used by to gui
-def recieve(s:socket.socket, listbox: tkinter.Listbox):
+def recieve(s: socket.socket, listbox: tkinter.Listbox):
     while True:
         try:
             # how big of data is determined, buffer size

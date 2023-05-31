@@ -1,4 +1,7 @@
-packages can be downloaded using: pip install -r requirements.txt
+packages can be downloaded using: 
+``` pip
+pip install -r requirements.txt
+``` 
 
 you need to have an ngrok account to start to project. to get an accoung, 
 1) go ngrok.com 

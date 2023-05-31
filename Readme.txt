@@ -10,7 +10,8 @@ add your authtoken to your config ngrok.yml file.
 
 project can be started using python main.py
 
-'''pip
+compatible with Linux and Windows 
+``` pip
 python3 main.py
 python3.exe ./main.py
-'''
+``` 

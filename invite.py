@@ -44,4 +44,4 @@ def return_invite_key():
     # encrypt the invite and add encryption key in.
 
 
-print(return_invite_key())
+# print(return_invite_key())

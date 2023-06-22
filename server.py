@@ -115,6 +115,7 @@ class Server:
                         for i in range(len(self.durations)-1):
                             if (list(self.durations.values())[i+1] - list(self.durations.values())[i])>9:
                                 (list(self.durations.keys())[i+1]).send("!stop".encode())
+                                print("Someone beyond the duration.")
 
                     print(self.durations)
             # exception handling when there is a problem og a huge code block, not possible

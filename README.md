@@ -3,6 +3,10 @@ A software with GUI to message with your friends and watch movie with them synch
 packages can be downloaded using: 
 ``` pip
 pip install -r requirements.txt
+```
+or
+``` pip
+pip3 install -r requirements.txt
 ``` 
 
 you need to have an ngrok account to start to project. to get an accoung, 

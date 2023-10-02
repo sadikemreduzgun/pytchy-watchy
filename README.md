@@ -27,7 +27,7 @@ python3.exe ./main.py
 
 Some images for intuition:
 
-<\br>
+<br\>
 <img width="601" alt="Ekran görüntüsü 2023-10-02 150354" src="https://github.com/sadikemreduzgun/pytchy-watchy/assets/70113249/2eb96122-00d5-41d5-a3c0-039c937b75e9">
 
 <img width="602" alt="Ekran görüntüsü 2023-10-02 150144" src="https://github.com/sadikemreduzgun/pytchy-watchy/assets/70113249/4a59cc76-cc8d-40bf-855b-5cdbfebdf566">
